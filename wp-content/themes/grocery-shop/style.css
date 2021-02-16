@@ -1,0 +1,193 @@
+/*
+Theme Name: Grocery Shop
+Author: aThemeArt
+Author URI: https://athemeart.com/
+Description: Grocery Shop is a clean and well-designed e-commerce WordPress child theme of Grocery Store. It is very flexible and packed, including several theme options that make website development a breeze. It has a fluid and fully responsive layout design to guarantee that your visitors will have an excellent viewing experience each time they go to your website. It exists so that you can fast and efficiently craft powerful e-commerce websites across all niches and markets in a matter of minutes, without having to write a line of code. It is packed with great features that allow you to explore your creativity and build a unique website for your online store. It comes with a smooth combination of the WooCommerce plugin. The theme's main points are product search with category select, multiple sections on the front page, full width easy to use slider, the latest and featured product carousel, call to action, advertisement section, banners, and more.
+
+Template:     grocery-store
+Version:      2.0.0
+Requires at least: 5.0
+Tested up to: 5.5.4
+Requires PHP: 7.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, sticky-post, custom-background, custom-header, custom-colors, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, custom-logo, blog, e-commerce
+Text Domain:  bc-shop
+
+
+Grocery Shop WordPress Theme, Copyright 2020 aThemeArt
+Grocery Shop is distributed under the terms of the GNU GPL
+
+Grocery Shop is child theme of Grocery Store WordPress Theme, Copyright 2020 aThemeArt
+
+*/
+
+.gs-content-wrap{
+	padding:0px;
+	background:none;
+	box-shadow:none;
+	margin-bottom:50px;
+}
+
+.gs-content-wrap .img-box{
+	margin:0px 00px 40px 0px;
+	overflow:hidden;
+	
+}
+.gs-content-wrap .post{
+	padding: 40px 20px 40px 40px;
+	background:#FFF;
+	position:relative;
+	z-index:99;
+	box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.048);
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.048);
+	margin:0px 20px;
+}
+.gs-content-wrap.grocery-shop-blog-loop .post{
+	margin-top:-100px;
+}
+.gs-content-wrap.grocery-shop-blog-loop .img-box img {
+    position: relative;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.gs-content-wrap.grocery-shop-blog-loop:hover .img-box img {
+	opacity: 0.50;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.navigation.posts-navigation,
+.comments-area{
+	margin-left:20px;
+	margin-right:20px;
+}
+.single-prev-next.container{
+	width:auto;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:50px;
+}
+.gs-content-wrap .img-box{
+	margin:0px auto;	
+}
+#reviews .comments-area{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+
+
+/*------------------------------------------
+# Header Style 2
+---------------------------------------------*/
+.grocery-shop-header-wrap{
+	background:#fff;	
+}
+header.site-header{
+	background:none;
+	position:relative;
+	z-index:999;	
+}
+header.site-header.site-header-2{
+	padding: 0px;
+}
+.site-branding a.site-title{
+	display:inline-block;
+	margin: 15px 0px 15px 0px;
+}
+.site-header.site-header-2 .nav-padding{
+	margin: 0px 50px 0px 30px;
+	display: block;
+	
+}
+header.site-header.site-header-2 .header-nav-style-2{
+	position: relative;
+}
+
+header.site-header.site-header-2 .header-angel-style:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    width: 2000%;
+    z-index:-1;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-30deg, 0deg);
+    -ms-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+    background: var(--nav-bg );
+}
+header.site-header.site-header-2 .site-branding.header-angel-style:after {
+	left: auto;
+	right: 25px;
+	background: rgba(var( --secondary-color-rgb ),0.5);
+	background: var( --nav-deep );
+}
+
+.header-style-element{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.header-style-element .menu-category-list:before{
+	display: none;
+}
+.header-style-element .menu-category-list{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+}
+.apsw-search-wrap{
+	z-index: 9!important;
+}
+.header-style-element .menu-category-list, 
+.header-style-element .top-form-minicart{
+	background: var(--nav-bg );
+	line-height: 56px;
+}
+.header-style-element .top-form-minicart a.cart-contents{
+	line-height: 56px
+}
+.header-style-element .menu-category-list:hover,
+.header-style-element .menu-category-list:focus{
+	background: var(--secondary-color );
+	color: var(--quaternary-color);
+
+}
+.header-style-element .top-form-minicart{
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+}
+.site-branding{
+	padding-top:20px;
+	padding-bottom:20px;	
+}
+.site-branding h4,.site-branding .site-description,.site-branding a{
+	color:#FFF;
+}
+.site-branding a.site-title{
+	margin-top:0px;	
+}
+.header-style-element .menu-category-list{
+	outline:none;	
+}
+.header-style-element .menu-category-list:hover, .header-style-element .menu-category-list:focus{
+	color: var(--nav-bg );
+	background: var(--nav-color );
+	background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%);
+
+}
+.menu-category-list .widget.woocommerce li a{
+	color: var(--nav-bg );
+}
